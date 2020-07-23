@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>bootstrap 5</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/javascript" src="script.js"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>bootstrap 5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
 
-    </body>
+<body>
+    <div class="row bg-dark text-white p-3 text-center">
+        <ul class="nav col-12 justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" href="#!">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">A propos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#!">Nous contacter </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="col-4 p-3">
+            <h1>Nav Verticale à gauche</h1>
+            <nav class="nav col-8 bg-dark flex-column ">
+                <a class="nav-link text-light" href="#!">Accueil</a>
+                <a class="nav-link text-light" href="#!">A propos</a>
+                <a class="nav-link text-light" href="#!">Nous contacter</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-4 p-3">
+            <h1>Nav avec contenu </h1>
+            <div class=" row ">
+                <div class="col-8 col-sm-6">
+                    <nav class="nav bg-dark flex-column ">
+                        <a class=" nav-link text-light " href=" #! "> Accueil</a>
+                        <a class="nav-link  text-light bg-primary " href="#! "> A propos</a>
+                        <a class="nav-link text-light " href="#! "> Nous contacter</a>
+                    </nav>
+                </div>
+                <div class="col-4 col-sm-6">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis labore suscipit dolorum quaerat amet iure impedit aspernatur distinctio tempora ex velit ut consectetur aliquid omnis hic ea voluptate temporibus?
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
