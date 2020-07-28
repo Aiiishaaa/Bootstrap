@@ -15,7 +15,9 @@
 </head>
 
 <body>
-    <div class="row bg-dark text-white p-3 text-center">
+
+    <div class="row bg-dark text-white p-0 text-center">
+
         <ul class="nav col-12 justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" href="#!">Accueil</a>
@@ -27,6 +29,7 @@
                 <a class="nav-link" href="#!">Nous contacter </a>
             </li>
         </ul>
+
     </div>
 
     <div class="row">
@@ -40,27 +43,27 @@
         </div>
     </div>
 
+
+    <h1>Nav avec contenu</h1>
     <div class="row">
-        <div class="col-6">
-            <h1>Nav avec contenu </h1>
-            <div class="row">
-                <div class="col-6">
-                    <nav class="nav bg-secondary flex-column ">
-                        <a class=" nav-link text-light " href=" #! "> Accueil</a>
-                        <a class="nav-link text-light bg-primary " href="#! "> A propos</a>
-                        <a class="nav-link text-light " href="#! "> Nous contacter</a>
-                    </nav>
-                </div>
+        <nav class="nav flex-column col-2 bg-secondary nav-pills p-3" role="tablist" aria-orientation="vertical">
+            <a class="nav-link text-white" id="accueil1" data-toggle="pill" href="#accueil" role="tab" aria-controls="acceuil" aria-selected="false">Accueil</a>
+            <a class="nav-link text-white" id="a-propos" data-toggle="pill" href="#propos" role="tab" aria-controls="propos" aria-selected="false">A propos</a>
+            <a class="nav-link text-white" id="nous-contacter" data-toggle="pill" href="#contact " role="tab " aria-controls="contact" aria-selected="false">Nous contactez</a>
+        </nav>
+        <div class="tab-content col-10">
+            <div class="tab-pane fade" id="accueil" role="tabpanel" aria-labelledby="accueil1">
+                Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor.
+                Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.
+            </div>
+            <div class="tab-pane fade" id="propos" role="tabpanel" aria-labelledby="a-propos">Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia
+                dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="nous-contacter">
+                Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor.
+                Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.
             </div>
         </div>
-    </div>
-    </div>
-
-    <div class="col-4 col-sm-6">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, perspiciatis labore suscipit dolorum quaerat amet iure impedit aspernatur distinctio tempora ex velit ut consectetur aliquid omnis hic ea voluptate temporibus?
-    </div>
-    </div>
-    </div>
     </div>
 </body>
 
