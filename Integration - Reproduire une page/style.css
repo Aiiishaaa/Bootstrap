@@ -1,0 +1,208 @@
+    body {
+        margin: 50px;
+        font-family: Georgia, 'Segoe UI', sans-serif;
+    }
+    /**************HEADER**************/
+    
+    .cnx>li a:hover {
+        border: 1px solid rgb(137, 97, 182);
+        border-radius: 1px;
+        text-decoration: none;
+        color: rgb(137, 97, 182);
+        padding: 5px;
+    }
+    
+    header a {
+        color: rgb(137, 97, 182);
+        font-size: 30px;
+    }
+    
+    .svg-1 {
+        height: 5%;
+        width: 5%;
+        margin-left: 200px;
+    }
+    
+    .about li {
+        list-style: none;
+    }
+    
+    .about li a {
+        text-shadow: 1px 1px 1px rgb(189, 185, 185);
+        font-size: 25px;
+        color: rgb(180, 171, 171);
+        padding-left: 0px;
+    }
+    
+    .title>h1 {
+        font-size: 80px;
+        margin-left: 650px;
+    }
+    
+    .title>h3 {
+        font-size: 43px;
+        color: gray;
+        font-family: sans-serif;
+        margin-left: 650px;
+    }
+    
+    #img-user {
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%
+    }
+    
+    .name-user {
+        font-size: 20px;
+        margin: 15px;
+        font-weight: bold;
+    }
+    /*****************ASIDE****************/
+    
+    button {
+        margin-left: 10px;
+        padding: 5px 25px 5px 25px;
+        color: rgb(198, 155, 228);
+        border-radius: 20px 20px 20px 20px;
+        border-color: rgb(198, 155, 228);
+        font-size: 30px;
+        background-color: white;
+    }
+    
+    .icon {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cnx {
+        margin: 15px;
+        color: grey;
+    }
+    
+    aside>p {
+        color: rgb(112, 109, 109);
+    }
+    
+    aside>h5 {
+        margin: 15px;
+        text-decoration: black;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    
+    aside>p {
+        margin: 15px;
+        text-decoration: rgb(192, 190, 190);
+        font-weight: bold;
+        font-size: 25px;
+    }
+    /*************** SECTION ***********************/
+    
+    #paradise {
+        height: 100%;
+        width: 100%;
+    }
+    
+    figure {
+        text-align: center;
+        font-size: 30px;
+        color: grey;
+    }
+    
+    .img-nav {
+        padding: 5px;
+        height: 50px;
+        width: 40px;
+    }
+    
+    .premier::first-letter {
+        font-family: sans-serif;
+        font-size: 100px;
+        padding: 50px 80px 50px 80px;
+        margin: 0 50px 0px 0px;
+        float: left;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: black;
+    }
+    
+    section {
+        font-family: sans-serif;
+        color: rgb(77, 77, 77);
+        text-align: justify;
+        font-size: 40px;
+    }
+    
+    section>p {
+        margin-top: 55px;
+        text-align: justify;
+    }
+    
+    .subtitle {
+        margin-top: 30px;
+        color: black;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    blockquote {
+        color: rgb(112, 109, 109);
+        text-align: left;
+        margin: 50px 50px 50px 100px;
+        font-style: italic;
+        font-size: 50px;
+    }
+    
+    section>nav {
+        margin: 50px;
+    }
+    
+    li {
+        color: rgb(112, 109, 109);
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .img-user {
+        overflow: hidden;
+        width: 100px;
+        height: 100px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%
+    }
+    
+    .oz {
+        height: 80px;
+        width: 80px;
+    }
+    
+    .a h4 {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .a p {
+        color: rgb(112, 109, 109);
+        font-size: 25px;
+    }
+    /*********** FOOTER ******************/
+    
+    .card-title {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    
+    .card-text {
+        font-size: 25px;
+        color: grey;
+    }
