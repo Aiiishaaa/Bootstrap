@@ -1,0 +1,50 @@
+    @media screen and (orientation:portrait) {
+    .football-ground {
+        transform: rotate(0.25turn);
+    }
+}
+
+.football-ground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.goal {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.equipe1-def {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.equipe1-attaq {
+    position: absolute;
+}
+
+.defence {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50%;
+}
+
+.equipe2-def {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 0px;
+}
+
+#attaq {
+    position: absolute;
+    display: flex;
+    justify-content: center;

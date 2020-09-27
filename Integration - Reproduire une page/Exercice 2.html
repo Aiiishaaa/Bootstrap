@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0077)http://127.0.0.1:5500/Exercice%202%20-%20Modifier%20les%20couleurs/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Exercice 2</title>
+    
+    <style type="text/css">
+        #bloc1 {
+            width: 500px;
+            height: 400px;
+            background-color: lightblue;
+        }
+        
+        #paragraphe1 {
+            color: green;
+        }
+        
+        #paragraphe2 {
+            color: red;
+        }
+    </style>
+
+    <script type="text/javascript">
+        addEventListener("load", () => {
+            const Bouton1 = document.querySelector("button"),
+                Bloc1 = document.querySelector("#bloc1");
+
+            Bouton1.addEventListener("click", () => {
+                Bloc1.style.backgroundColor = "yellow";
+            })
+
+
+            const Bouton2 = document.querySelector("button:nth-of-type(2)"),
+                paragraphes = document.querySelectorAll("p");
+
+            Bouton2.addEventListener("click", () => {
+                paragraphes.forEach((p) => {
+                    p.style.color = "black"
+
+                })
+            })
+            paragraphes.forEach((p) => {
+                p.addEventListener("mouseover", () => {
+                    p.style.color = "white";
+                })
+                p.addEventListener("mouseout", () => {
+                    p.style.color = "black";
+
+                })
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+
+    <div id="bloc1">
+        <p id="paragraphe1" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <p id="paragraphe2" style="color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </div>
+    <button>Modifier fond</button>
+    <button>Modifier texte</button>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
